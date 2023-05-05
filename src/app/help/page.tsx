@@ -4,6 +4,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 export default function Home() {
   return (
-    <main><h1 className="text-center" id="Arnaud">Hello World!</h1></main>
+    <main><h1 className="text-center" id="Arnaud">Aide</h1></main>
   );
 }

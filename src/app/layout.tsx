@@ -1,4 +1,5 @@
 import './globals.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,8 +15,28 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arnaud vous cherche le produit correspondant à un code-barre. Il est vraiment sympa Arnaud!"/>
+    <title>Arnaud le code-barre</title>
+  </head>    
+  <body className={inter.className}>
+  <header>
+      <nav className="navbar sticky-top">
+        <div className="container-fluid mt-3 mx-3">
+          <a className="navbar-brand" href="../">
+            <img src="ressources/aubergine.webp" alt="logo yugo" width="50px" />
+          </a>
+          <a className="navbar-brand" href="/help">
+            <img src="../../public/question.svg" alt="aide" width="50px" />
+          </a>
+        </div>
+      </nav>
+    </header>
+    {children}
+    </body>  
+  </html>    
   )
 }
