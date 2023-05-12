@@ -1,4 +1,73 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 h1 {
-  background-color: red;
-  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  color: red;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.barre_de_recherche {
+  height: 4em;
+  border-radius: 1em;
+  margin-top: 25%;
+}
+
+.bouton,
+.chance {
+  height: 4em;
+  border-radius: 1em;
+  padding: 0em 5em;
+  margin-top: 2em;
+  margin-bottom: 20%;
+  background-color: rgba(7, 126, 5);
+  color: white;
+}
+.bouton2 {
+  background-color: rgba(7, 126, 5);
+  color: white;
+}
+.bouton2:hover,
+.bouton:hover,
+.chance:hover {
+  color: rgba(7, 126, 5);
+  font-weight: bold;
+  border: 1px solid rgba(7, 126, 5);
+  background-color: white;
+}
+
+.btn a,
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.icones img {
+  height: 5em;
+  width: auto;
+}
+
+.icones {
+  background: rgb(253, 247, 237);
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.336);
+}
+
+.preview {
+  border: solid 2px black;
+  border-radius: 25px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.336);
+  transform: rotate(-20deg);
+  margin-top: 20px;
+  margin-left: 40%;
+  z-index: auto;
 }
